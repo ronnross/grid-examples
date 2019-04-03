@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foot on bottom</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto  1fr  auto;
+      }
+
+      header {
+        background-color: tomato;
+      }
+
+
+      footer {
+        background-color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>header</header>
+      <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+        itaque laboriosam accusantium ratione! Molestiae corporis veritatis nisi
+        nesciunt fugiat illum, a iste rem. Ea consectetur excepturi hic
+        voluptates quae praesentium.
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

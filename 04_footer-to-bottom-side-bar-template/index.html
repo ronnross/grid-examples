@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foot on bottom</title>
+    <style>
+      html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template:
+    "head head" auto
+    "bc bc" auto
+    "nav main" 1fr
+    "nav foot" auto;
+}
+
+header {
+  background-color: tomato;
+  grid-area: head;
+}
+
+.bread-crumbs {
+  background-color: teal;
+  grid-area: bc;
+}
+
+main {
+  background-color: #d7d7d7;
+  grid-area: main;
+}
+
+aside {
+  grid-area: nav;
+}
+
+footer {
+  background-color: royalblue;
+  grid-area: foot;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template:
+      "head head" auto
+      "bc bc" auto
+      "main nav" 1fr
+      "foot foot" auto;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>header</header>
+      <section class="bread-crumbs">bread > crumbs > here</section>
+      <aside>
+        <ul>
+          <li>Lorem, ipsum dolor.</li>
+          <li>Suscipit, eaque inventore!</li>
+          <li>Quos, deleniti consequatur?</li>
+          <li>Quia, repellendus vitae.</li>
+          <li>Temporibus, aperiam ex?</li>
+        </ul>
+      </aside>
+      <main>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+        itaque laboriosam accusantium ratione! Molestiae corporis veritatis nisi
+        nesciunt fugiat illum, a iste rem. Ea consectetur excepturi hic
+        voluptates quae praesentium.
+      </main>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

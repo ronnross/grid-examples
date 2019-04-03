@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product grid</title>
+    <style>
+
+      body {
+        background: #d7d7d7;
+      }
+
+      .item {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+      }
+
+      .product {
+        background-color: #ffc600;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-details {
+        padding: 0.5rem;
+      }
+
+      .product-name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .product-image {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="products">
+      <div class="product">
+        <img class="product-image" src="http://placeimg.com/300/300/any/tech" />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="http://placeimg.com/300/300/any" />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/any/grayscale"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img class="product-image" src="http://placeimg.com/300/300/any/arch" />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/any/nature"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/any/nature/grayscale"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/any/people"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/any/people/sepia"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/tech/sepia"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+
+      <div class="product">
+        <img
+          class="product-image"
+          src="http://placeimg.com/300/300/tech/grayscale"
+        />
+        <div class="product-details">
+          <p class="product-name">Product Name</p>
+          <p class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
+            sint doloremque repellat, iste debitis.
+          </p>
+          <p class="product-price">
+            $9.99
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
